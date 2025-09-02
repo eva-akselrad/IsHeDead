@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from api import News
+#import News
 
 app = Flask(__name__)
 def isDead(headlines):
@@ -21,9 +22,10 @@ def home():
         message = "He lives on :("
 
     # Render the index.html template and pass the 'message' variable to it
-    return render_template('pages\index.html', message=message)
+    return render_template('index.html', message=message)
     
 
 @app.route('/about')
 def about():
     return 'About'
+
