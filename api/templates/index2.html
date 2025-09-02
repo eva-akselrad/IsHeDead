@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -36,12 +37,29 @@
         .status-alive {
             color: #5cb85c; /* A greenish color for "alive" */
         }
+                footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        footer a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class=status-dead>{{ message }}</h1>
     </div>
+    <footer>
+        <p><a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+    </footer>
     <script>
         // Refresh the page every 5 minutes (300,000 milliseconds)
         setTimeout(() => {
