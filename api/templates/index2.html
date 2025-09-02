@@ -12,15 +12,16 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f9;
+            background-color: #ff0000;
         }
 
         .container {
             text-align: center;
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(43, 255, 0, 0.1);
-            background-color: #00ff04;
+            background-color: red;
+            box-shadow: 0 4px 8px rgba(9, 255, 0, 0.956);
+            background-color: #26ff00;
         }
 
         h1 {
@@ -29,7 +30,7 @@
         }
 
         .status-dead {
-            color: #d9534f; /* A reddish color for "dead" */
+            color: #000000; /* A reddish color for "dead" */
         }
 
         .status-alive {
@@ -39,7 +40,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>{{ message }}</h1>
+        <h1 class=status-dead>{{ message }}</h1>
     </div>
 </body>
 </html>

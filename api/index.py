@@ -18,12 +18,13 @@ def home():
     
     if isDead(headlines):
         message = "HES DEAD THE MOULDY ORANGE IS DEAD"
+        return render_template('index2.html', message=message)
     else:
         message = "He lives on :("
+        return render_template('index.html', message=message)
 
     # Render the index.html template and pass the 'message' variable to it
-    print(message)
-    return render_template('index.html', message=message)
+    
     
 
 @app.route('/about')
