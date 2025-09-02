@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import time
-import os
 class NewsFetcher:
     """
     A Python class to fetch and print recent news headlines via web scraping.
