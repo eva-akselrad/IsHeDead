@@ -22,6 +22,7 @@ def home():
         message = "He lives on :("
 
     # Render the index.html template and pass the 'message' variable to it
+    print(message)
     return render_template('index.html', message=message)
     
 
