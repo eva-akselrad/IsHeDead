@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Status</title>
+    <title>He is alive</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,5 +41,11 @@
     <div class="container">
         <h1>{{ message }}</h1>
     </div>
+    <script>
+        // Refresh the page every 5 minutes (300,000 milliseconds)
+        setTimeout(() => {
+            window.location.reload();
+        }, 300000);
+    </script>
 </body>
 </html>
