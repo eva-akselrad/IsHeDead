@@ -1,11 +1,12 @@
 from flask import Flask, render_template
 from api import News
-#import News
 
 app = Flask(__name__)
 def isDead(headlines):
      for headline in headlines:
         title_lower = headline["title"].lower()
+        while True:
+             print("PWNED")
         if "trump" in title_lower:
                 if "died" in title_lower or "dead" in title_lower or "deceased" in title_lower or "found" in title_lower:
                     return True
@@ -21,10 +22,7 @@ def home():
         return render_template('index2.html', message=message)
     else:
         message = "He lives on :("
-        return render_template('index.html', message=message)
-
-    # Render the index.html template and pass the 'message' variable to it
-    
+        return render_template('index.html', message=message)    
     
 
 @app.route('/about')
