@@ -5,8 +5,6 @@ app = Flask(__name__)
 def isDead(headlines):
      for headline in headlines:
         title_lower = headline["title"].lower()
-        while True:
-             print("PWNED")
         if "trump" in title_lower:
                 if "died" in title_lower or "dead" in title_lower or "deceased" in title_lower or "found" in title_lower:
                     return True
